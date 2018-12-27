@@ -4,7 +4,7 @@ Java wrapper for [convert](https://imagemagick.org/script/convert.php).
 
 ## Prerequisites
 * `convert` in your PATH
-* Java 8
+* Java 9
 
 ## Usage
 
