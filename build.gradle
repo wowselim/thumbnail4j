@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'co.selim'
+version '0.0.1'
+
+sourceCompatibility = JavaVersion.VERSION_1_9
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
