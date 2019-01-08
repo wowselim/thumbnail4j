@@ -6,12 +6,12 @@ Java wrapper for [convert](https://imagemagick.org/script/convert.php).
 * `convert` in your PATH
 * Java 9
 
-## Usage
+## Including thumbnail4j in a project
 
 First, add thumbnail4j to your dependencies using the [jitpack repository](https://jitpack.io/#wowselim/thumbnail4j).
 
-### Example
+### Usage
 ```java
-CompletableFuture<byte[]> thumbnailFuture = ThumbnailCreator.createThumbnail(1024, urlToFile);
-byte[] thumbnailBytes = thumbnailFuture.exceptionally(throwable -> new byte[0]).get();
+URI fileUri = new File("bird.JPG").toURI(); // or Paths.get("bird.JPG").toUri();
+byte[] thumbnail = ThumbnailCreator.createThumbnail(1024, fileUri);
 ```
