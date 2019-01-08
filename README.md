@@ -13,5 +13,5 @@ First, add thumbnail4j to your dependencies using the [jitpack repository](https
 ### Usage
 ```java
 URI fileUri = new File("bird.JPG").toURI(); // or Paths.get("bird.JPG").toUri();
-byte[] thumbnail = ThumbnailCreator.createThumbnail(1024, fileUri);
+byte[] thumbnail = new ThumbnailCreator().createThumbnail(1024, fileUri);
 ```
