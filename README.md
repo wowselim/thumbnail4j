@@ -1,4 +1,5 @@
 # thumbnail4j
+[![](https://jitpack.io/v/wowselim/thumbnail4j.svg)](https://jitpack.io/#wowselim/thumbnail4j)
 
 Java wrapper for [convert](https://imagemagick.org/script/convert.php).
 
