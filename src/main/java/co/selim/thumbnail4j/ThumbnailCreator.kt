@@ -19,5 +19,8 @@ fun InputStream.createThumbnail(px: Int): ByteArray {
     convertProcess.outputStream.use {
         this.copyTo(it)
     }
-    return convertProcess.inputStream.readBytes()
+
+    return convertProcess.inputStream.use {
+        it.readBytes()
+    }
 }
