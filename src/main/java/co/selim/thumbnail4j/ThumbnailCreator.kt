@@ -16,6 +16,8 @@ fun InputStream.createThumbnail(px: Int): ByteArray {
             .redirectError(ProcessBuilder.Redirect.INHERIT)
             .start()
 
-    this.copyTo(convertProcess.outputStream)
+    convertProcess.outputStream.use {
+        this.copyTo(it)
+    }
     return convertProcess.inputStream.readBytes()
 }
